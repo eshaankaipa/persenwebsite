@@ -16,10 +16,6 @@ const faqs = [
     answer: "No. Persen sits alongside your existing stack as a testing and intelligence layer, enhancing—not replacing—your current workflows."
   },
   {
-    question: "What kind of results can we expect?",
-    answer: "Most teams see significantly higher conversion rates and shorter sales cycles within the first few months. We'll walk you through projected outcomes during your initial call."
-  },
-  {
     question: "Is our data secure?",
     answer: "Yes. We're SOC 2 Type II certified and GDPR compliant. Your data is encrypted and never shared. We also offer private deployment options if needed."
   },
