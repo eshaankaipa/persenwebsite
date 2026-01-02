@@ -18,7 +18,7 @@ const PreFooterSection = () => {
       </svg>
 
       {/* Header Container */}
-      <div className="inner grid grid-cols-12 header py-[140px] px-8 md:px-0">
+      <div className="inner grid grid-cols-12 header py-[200px] px-8 md:px-0">
         <div className="text-wrapper col-start-1 col-span-12 md:col-start-4 md:col-span-6 flex flex-col items-center text-center">
           <div className="eyebrow mb-6 text-[12px] font-medium uppercase tracking-wider text-zinc-500 font-sans">
             [Persen Simulation Layer]
