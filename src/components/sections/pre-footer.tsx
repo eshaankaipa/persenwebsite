@@ -24,8 +24,8 @@ const faqs = [
     answer: "Traditional tools measure results after outreach is sent. Persen predicts outcomes in advance by simulating how your ideal customer profile responds—reducing guesswork and wasted execution."
   },
   {
-    question: "Will Persen grow with us?",
-    answer: "Absolutely. Our platform is built for scale—whether you're a growing team or an established enterprise. Pricing is based on value, not seats."
+    question: "Will Persen scale as our team and data grow?",
+    answer: "Yes. Persen is built to scale across teams, segments, and markets, evolving as your sales motion and data complexity grow."
   }
 ];
 
