@@ -25,7 +25,7 @@ const BenefitsMarquee = () => {
     { text: "Revenue Estimation", icon: BarChart3 },
     { text: "Continuous Optimization", icon: RefreshCw },
     { text: "Actionable Analytics", icon: Activity },
-    { text: "Data Driven Decisions", icon: TrendingUp },
+      { text: "Data-Driven Decisions", icon: TrendingUp },
     { text: "Message-Level Testing", icon: MessageSquare },
   ];
 
@@ -37,13 +37,13 @@ const BenefitsMarquee = () => {
         {totalBenefits.map((benefit, idx) => {
           const Icon = benefit.icon;
           return (
-            <div 
-              key={idx}
-              className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500/10 to-blue-600/10 border border-blue-500/30 rounded-full hover:border-blue-400/50 transition-colors"
-            >
-              <Icon size={14} className="text-blue-400" />
-              <span className="text-[13px] font-medium text-blue-300">{benefit.text}</span>
-            </div>
+              <div 
+                key={idx}
+                className="flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-blue-500/10 to-blue-600/10 border border-blue-500/30 rounded-full hover:border-blue-400/50 transition-colors"
+              >
+                <Icon size={12} className="text-blue-400" />
+                <span className="text-[11px] font-medium text-blue-300">{benefit.text}</span>
+              </div>
           );
         })}
       </div>
