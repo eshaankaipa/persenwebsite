@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -37,7 +37,8 @@
   --color-text-secondary: #666666;
   --color-yc-orange: #ff6b00;
 
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-sora), ui-sans-serif, system-ui, sans-serif;
+  --font-sora: var(--font-sora), ui-sans-serif, system-ui, sans-serif;
 
   --radius-lg: 24px;
   --radius-md: 12px;
