@@ -301,8 +301,8 @@ const UseCases = () => {
                     Embedded Testing Layer Before Execution
                   </h2>
 <p className="max-w-3xl mx-auto text-[21px] md:text-[23px] text-zinc-500 leading-relaxed font-sans">
-                    <span className="text-zinc-400 text-[22px] md:text-[24px]">We provide a shared testing layer</span> across the revenue organization, giving reps, leaders, and strategy teams clear insight into which plays drive engagement, pipeline, and revenue—before and after execution.
-                  </p>
+                  <span className="text-zinc-300 text-[23px] md:text-[25px]">We provide a shared testing layer</span> across the revenue organization, giving reps, leaders, and strategy teams clear insight into which plays drive engagement, pipeline, and revenue—before and after execution.
+                </p>
           </div>
 
         {/* 4-Column Grid - Matched syntheticsociety.ai layout */}
