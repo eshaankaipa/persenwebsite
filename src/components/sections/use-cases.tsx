@@ -50,7 +50,7 @@ const BenefitsMarquee = () => {
       
       <style jsx>{`
         .animate-marquee-reverse {
-          animation: marquee-reverse 40s linear infinite;
+          animation: marquee-reverse 48s linear infinite;
           will-change: transform;
         }
         @keyframes marquee-reverse {
