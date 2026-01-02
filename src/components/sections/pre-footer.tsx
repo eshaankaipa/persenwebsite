@@ -1,39 +1,68 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 const faqs = [
   {
-    question: "What is Persen?",
-    answer: "Persen is a simulation platform that models your audience behavior, allowing you to test and optimize your go-to-market strategies before execution."
+    question: "How does Persen integrate with our existing revenue tech stack?",
+    answer: "Persen connects natively with Salesforce, HubSpot, Marketo, Outreach, and 40+ enterprise platforms via API. Our implementation team handles the integration in under two weeks with zero disruption to your existing workflows."
   },
   {
-    question: "How does the simulation work?",
-    answer: "Our AI analyzes your historical data and market signals to create predictive models of how your audience will respond to different plays, messaging, and timing."
+    question: "What ROI can we expect from deploying Persen?",
+    answer: "Enterprise customers typically see a 3-5x increase in pipeline conversion rates and 40% reduction in sales cycle length within the first quarter. We provide detailed ROI projections during your initial assessment."
   },
   {
-    question: "What data do I need to get started?",
-    answer: "You can start with your CRM data, engagement metrics, and campaign history. The more data you provide, the more accurate your simulations become."
+    question: "How does Persen ensure data security and compliance?",
+    answer: "Persen is SOC 2 Type II certified and GDPR compliant. All data is encrypted at rest and in transit. We offer single-tenant deployment options for organizations with strict data residency requirements."
   },
   {
-    question: "How accurate are the simulations?",
-    answer: "Our simulations typically achieve 85-95% accuracy in predicting engagement patterns and conversion likelihood based on validated backtesting."
+    question: "What level of support do enterprise customers receive?",
+    answer: "Enterprise plans include dedicated customer success managers, 24/7 priority support, quarterly business reviews, and custom training sessions for your revenue teams."
   },
   {
-    question: "Can I integrate Persen with my existing tools?",
-    answer: "Yes, Persen integrates with major CRMs, marketing automation platforms, and sales engagement tools through native integrations and APIs."
+    question: "Can Persen scale with our organization's growth?",
+    answer: "Persen is built for enterprise scale. Our platform handles millions of contact simulations daily and supports unlimited users. Pricing scales with value delivered, not seat count."
   }
 ];
 
 const PreFooterSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const sectionRef = useRef<HTMLElement>(null);
+  const ctaRef = useRef<HTMLDivElement>(null);
+  const [ctaPosition, setCtaPosition] = useState<'relative' | 'fixed' | 'absolute'>('relative');
+  const [ctaTop, setCtaTop] = useState(0);
 
   const toggleFaq = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!sectionRef.current || !ctaRef.current) return;
+
+      const section = sectionRef.current.getBoundingClientRect();
+      const ctaHeight = ctaRef.current.offsetHeight;
+      const topOffset = 120;
+      const bottomPadding = 120;
+
+      if (section.top > topOffset) {
+        setCtaPosition('relative');
+      } else if (section.bottom - ctaHeight - bottomPadding < topOffset) {
+        setCtaPosition('absolute');
+        setCtaTop(section.height - ctaHeight - bottomPadding - 120);
+      } else {
+        setCtaPosition('fixed');
+        setCtaTop(topOffset);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <section className="sections-pre-footer pre-footer relative bg-zinc-950">
+    <section ref={sectionRef} className="sections-pre-footer pre-footer relative bg-zinc-950">
       <svg className="svg-dashed-line horizontal line top w-full h-[1px] block" width="100%" height="1.5">
         <pattern id="dashed-pattern-h-prefooter-top" width="4" height="2" patternUnits="userSpaceOnUse">
           <line x1="0" y1="1" x2="2" y2="1" stroke="#3f3f46" strokeWidth="1" opacity="0.5" />
@@ -43,13 +72,13 @@ const PreFooterSection = () => {
 
       <div className="py-[120px] px-8 md:px-16 lg:px-24">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col lg:flex-row gap-16 lg:gap-12">
+          <div className="flex flex-col lg:flex-row gap-16 lg:gap-12 relative">
             
             {/* FAQ Section - 2/3 */}
             <div className="lg:w-2/3 order-2 lg:order-1">
               <div className="mb-8">
                 <span className="text-[10px] uppercase tracking-wider text-zinc-500 font-medium font-sans">
-                  [Frequently Asked]
+                  [Frequently Asked Questions]
                 </span>
               </div>
               
@@ -93,9 +122,25 @@ const PreFooterSection = () => {
               </div>
             </div>
 
-            {/* CTA Section - 1/3 */}
-            <div className="lg:w-1/3 order-1 lg:order-2 lg:pl-12 lg:border-l lg:border-zinc-800">
-              <div className="lg:sticky lg:top-32">
+            {/* CTA Section - 1/3 with fixed positioning */}
+            <div className="lg:w-1/3 order-1 lg:order-2 lg:pl-12 lg:border-l lg:border-zinc-800 relative">
+              {/* Spacer for layout */}
+              <div className="hidden lg:block" style={{ height: ctaPosition !== 'relative' ? ctaRef.current?.offsetHeight : 0 }} />
+              
+              <div 
+                ref={ctaRef}
+                className={`bg-zinc-950 ${
+                  ctaPosition === 'fixed' 
+                    ? 'lg:fixed lg:w-[calc((100%-6rem)/3-3rem)] lg:max-w-[340px]' 
+                    : ctaPosition === 'absolute'
+                    ? 'lg:absolute lg:w-full'
+                    : ''
+                }`}
+                style={{
+                  top: ctaPosition === 'fixed' ? `${ctaTop}px` : ctaPosition === 'absolute' ? `${ctaTop}px` : undefined,
+                  right: ctaPosition === 'fixed' ? 'auto' : undefined,
+                }}
+              >
                 <h3 className="title text-[28px] md:text-[36px] font-medium leading-tight tracking-tight mb-6 text-white font-sans">
                   Get hours back every week.
                 </h3>
