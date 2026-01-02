@@ -297,7 +297,7 @@ const UseCases = () => {
         <div className="max-w-[1400px] mx-auto px-6">
           {/* Header Text */}
           <div className="max-w-[1200px] mx-auto text-center mb-20">
-<h2 className="text-lg md:text-xl font-medium tracking-tight text-white mb-6 font-sans">
+<h2 className="text-xs md:text-sm font-light tracking-[0.2em] uppercase text-white mb-6 font-mono">
                   Embedded Testing Layer Before Execution
                 </h2>
                 <p className="max-w-3xl mx-auto text-[21px] md:text-[23px] text-zinc-400 leading-relaxed font-sans">
