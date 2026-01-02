@@ -24,7 +24,7 @@ const TeamInstitutions = () => {
       <div className="max-w-[1400px] mx-auto px-6 pt-24 pb-12">
         <div className="max-w-2xl">
 <h2 className="text-[3.5rem] md:text-[4rem] font-medium leading-[1.1] tracking-tight text-black mb-6 font-sans">
-                Backed by industry leaders and sales intelligence experts
+                Backed by Fortune 500 leaders and sales intelligence experts
               </h2>
         </div>
       </div>
