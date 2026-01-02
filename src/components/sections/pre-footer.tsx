@@ -4,8 +4,16 @@ import React, { useState } from 'react';
 
 const faqs = [
   {
-    question: "How does Persen connect with the tools we already use?",
-    answer: "Persen integrates with popular CRMs and marketing platforms like Salesforce, HubSpot, and Outreach. Setup typically takes less than two weeks, and our team handles everything."
+    question: "What does Persen actually do?",
+    answer: "Persen models enterprise audiences to simulate buyer behavior, giving revenue teams a testing layer to validate outbound plays and forecast performance before and after execution."
+  },
+  {
+    question: "Who is Persen built for?",
+    answer: "Persen is used by SDRs testing individual plays, sales leaders tracking long-term performance, revenue teams analyzing engagement trends, and content teams validating messaging strategy."
+  },
+  {
+    question: "Does Persen replace our CRM or sales tools?",
+    answer: "No. Persen sits alongside your existing stack as a testing and intelligence layer, enhancing—not replacing—your current workflows."
   },
   {
     question: "What kind of results can we expect?",
@@ -16,8 +24,8 @@ const faqs = [
     answer: "Yes. We're SOC 2 Type II certified and GDPR compliant. Your data is encrypted and never shared. We also offer private deployment options if needed."
   },
   {
-    question: "What support do we get?",
-    answer: "Every customer gets a dedicated success manager, priority support, and regular check-ins to make sure you're getting the most out of Persen."
+    question: "How is Persen different from traditional sales analytics?",
+    answer: "Traditional tools measure results after outreach is sent. Persen predicts outcomes in advance by simulating how your ideal customer profile responds—reducing guesswork and wasted execution."
   },
   {
     question: "Will Persen grow with us?",
