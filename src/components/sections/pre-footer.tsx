@@ -93,9 +93,9 @@ const PreFooterSection = () => {
               </div>
             </div>
 
-            {/* CTA Section - 1/3 with sticky positioning */}
-            <div className="lg:w-1/3 order-1 lg:order-2 lg:pl-12 lg:border-l lg:border-zinc-800">
-              <div className="lg:sticky lg:top-32">
+            {/* CTA Section - 1/3 centered vertically */}
+            <div className="lg:w-1/3 order-1 lg:order-2 lg:pl-12 lg:border-l lg:border-zinc-800 flex items-center">
+              <div>
                 <h3 className="title text-[28px] md:text-[36px] font-medium leading-tight tracking-tight mb-6 text-white font-sans">
                   Get hours back every week.
                 </h3>
