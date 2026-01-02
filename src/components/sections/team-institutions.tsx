@@ -23,17 +23,17 @@ const TeamInstitutions = () => {
     <section className="bg-white border-t border-black/5">
       <div className="max-w-[1400px] mx-auto px-6 pt-24 pb-12">
         <div className="max-w-2xl">
-<h2 className="text-[3.5rem] md:text-[4rem] font-medium leading-[1.1] tracking-tight text-black mb-6 font-sans">
-                Backed by industry leaders and sales intelligence experts
-              </h2>
+<h2 className="text-xs md:text-sm font-light tracking-[0.2em] uppercase text-black mb-6 font-mono">
+                  BACKED BY INDUSTRY LEADERS AND SALES INTELLIGENCE EXPERTS
+                </h2>
         </div>
       </div>
 
       <div className="border-t border-black/5 pt-10 md:pt-16 pb-24 md:pb-36 overflow-hidden">
         <div className="max-w-[1400px] mx-auto px-6 mb-10">
-<p className="text-xs text-white font-medium uppercase tracking-[0.2em]">
-                Backed by
-              </p>
+<p className="text-xs font-light text-black uppercase tracking-[0.2em] font-mono">
+                  BACKED BY
+                </p>
         </div>
         
         <div className="relative w-full overflow-hidden py-8">

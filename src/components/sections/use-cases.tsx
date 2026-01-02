@@ -300,9 +300,9 @@ const UseCases = () => {
 <h2 className="text-xs md:text-sm font-light tracking-[0.2em] uppercase text-white mb-6 font-mono">
                   Embedded Testing Layer Before Execution
                 </h2>
-                <p className="max-w-3xl mx-auto text-[21px] md:text-[23px] text-zinc-400 leading-relaxed font-sans">
-                We provide a shared testing layer across the revenue organization, giving reps, leaders, and strategy teams clear insight into which plays drive engagement, pipeline, and revenue—before and after execution.
-              </p>
+<p className="max-w-3xl mx-auto text-sm md:text-base text-zinc-400 leading-relaxed font-mono font-light">
+                  We provide a shared testing layer across the revenue organization, giving reps, leaders, and strategy teams clear insight into which plays drive engagement, pipeline, and revenue—before and after execution.
+                </p>
           </div>
 
         {/* 4-Column Grid - Matched syntheticsociety.ai layout */}
@@ -322,12 +322,12 @@ const UseCases = () => {
               </div>
 
               <div className="flex-1">
-<h3 className="text-[18px] font-medium mb-2 text-white group-hover:text-blue-400 transition-colors font-sans">
-                    {useCase.title}
-                  </h3>
-                  <p className="text-zinc-500 text-[14px] leading-relaxed font-sans">
-                  {useCase.description}
-                </p>
+<h3 className="text-sm font-light mb-2 text-white group-hover:text-blue-400 transition-colors font-mono uppercase tracking-[0.15em]">
+                      {useCase.title}
+                    </h3>
+                    <p className="text-zinc-500 text-xs leading-relaxed font-mono font-light">
+                    {useCase.description}
+                  </p>
               </div>
             </motion.div>
           ))}
