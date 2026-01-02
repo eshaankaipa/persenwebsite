@@ -27,7 +27,7 @@ const Header = () => {
         </div>
 
 {/* Logo Section */}
-          <a href="/" className="flex items-center gap-2 group transition-opacity hover:opacity-80 ml-8 md:ml-16" aria-label="home page">
+          <a href="/" className="flex items-center gap-2 group transition-opacity hover:opacity-80 ml-12 md:ml-24" aria-label="home page">
               <img 
                 src="/logo.png" 
                 alt="Persen Logo" 
