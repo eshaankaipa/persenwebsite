@@ -28,23 +28,23 @@ export default function Home() {
 
       {/* Hero Section - Hybrid of Pointer and a37 */}
       <CombinedHero />
-      <div className="h-[1px] bg-neutral-400" />
+      <div className="h-[1px] bg-neutral-300" />
 
       {/* Intelligence Visualization - a37 */}
       <IntelligenceEngine />
-      <div className="h-[1px] bg-neutral-400" />
+      <div className="h-[1px] bg-neutral-300" />
 
       {/* Industry Use Cases - a37 (Dark Section) */}
       <UseCases />
-      <div className="h-[1px] bg-neutral-400" />
+      <div className="h-[1px] bg-neutral-300" />
 
       {/* Team & Authority - a37 */}
       <TeamInstitutions />
-      <div className="h-[1px] bg-neutral-400" />
+      <div className="h-[1px] bg-neutral-300" />
 
       {/* Secondary CTA - Pointer */}
       <PreFooterSection />
-      <div className="h-[1px] bg-neutral-400" />
+      <div className="h-[1px] bg-neutral-300" />
 
       {/* Global Footer - Pointer */}
       <Footer />
