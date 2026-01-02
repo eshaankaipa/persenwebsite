@@ -3,7 +3,7 @@ import React from 'react';
 const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 flex flex-col bg-transparent w-full">
-      <nav className="relative flex items-center justify-between px-6 md:px-12 py-5 w-full">
+        <nav className="relative flex items-center px-10 md:px-20 py-5 w-full">
         {/* Vertical Side Lines */}
         <div className="absolute left-0 top-0 h-full w-[1px]">
           <svg className="h-full w-full" preserveAspectRatio="none">
@@ -45,15 +45,7 @@ const Header = () => {
               </div>
             </a>
 
-        {/* CTA Section */}
-        <div className="flex items-center">
-          <a 
-            href="https://cal.com/nealchopra/demo" 
-            className="bg-[#222222] text-white text-[14px] font-medium px-4 py-2 rounded-[8px] transition-all duration-200 hover:opacity-90 active:scale-[0.98] shadow-sm"
-          >
-            Book a demo
-          </a>
-        </div>
+
       </nav>
 
       {/* Bottom Horizontal Border */}
