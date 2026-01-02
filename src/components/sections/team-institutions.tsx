@@ -17,7 +17,7 @@ const TeamInstitutions = () => {
     { name: "Stanford", logo: "https://upload.wikimedia.org/wikipedia/commons/4/4b/Stanford_Cardinal_logo.svg" },
   ];
 
-  const allCompanies = [...companies, ...companies, ...companies, ...companies];
+  const allCompanies = [...companies, ...companies];
 
   return (
     <section className="bg-white border-t border-black/5">
@@ -61,20 +61,20 @@ const TeamInstitutions = () => {
         </div>
       </div>
 
-      <style jsx>{`
-        @keyframes scroll-left {
-          0% {
-            transform: translateX(0);
+        <style jsx>{`
+          @keyframes scroll-left {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-50%);
+            }
           }
-          100% {
-            transform: translateX(-25%);
+          .animate-scroll-left {
+            animation: scroll-left 28.5s linear infinite;
+            will-change: transform;
           }
-        }
-        .animate-scroll-left {
-          animation: scroll-left 28.5s linear infinite;
-          will-change: transform;
-        }
-      `}</style>
+        `}</style>
     </section>
   );
 };
