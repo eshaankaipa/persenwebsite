@@ -298,9 +298,9 @@ const UseCases = () => {
           {/* Header Text */}
           <div className="max-w-[1200px] mx-auto text-center mb-20">
 <h2 className="text-xs md:text-sm font-light tracking-[0.2em] uppercase text-white mb-6 font-mono">
-                  Embedded Testing Layer Before Execution
+                  EMBEDDED TESTING LAYER BEFORE EXECUTION
                 </h2>
-<p className="max-w-3xl mx-auto text-sm md:text-base text-zinc-400 leading-relaxed font-mono font-light">
+<p className="max-w-3xl mx-auto text-base md:text-lg text-zinc-400 leading-relaxed font-mono font-light">
                   We provide a shared testing layer across the revenue organization, giving reps, leaders, and strategy teams clear insight into which plays drive engagement, pipeline, and revenue—before and after execution.
                 </p>
           </div>

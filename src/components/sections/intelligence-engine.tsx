@@ -20,8 +20,8 @@ const IntelligenceEngine = () => {
 <h2 className="text-xs md:text-sm font-light tracking-[0.2em] uppercase text-black mb-6 font-mono">
                 PREDICTIVE INTELLIGENCE FOR SALES
               </h2>
-            <p className="max-w-3xl mx-auto text-[19px] md:text-[21px] text-zinc-500 leading-relaxed font-sans">
-              <span className="font-semibold text-[21px] md:text-[23px] text-black">Persen</span> builds custom models of enterprise audiences to predict how buyers will respond — before a single message is sent. We provide a testing layer for sales executives to validate plays and forecast performance before going to market.
+            <p className="max-w-3xl mx-auto text-base md:text-lg text-zinc-500 leading-relaxed font-mono font-light">
+              <span className="font-medium text-black">Persen</span> builds custom models of enterprise audiences to predict how buyers will respond — before a single message is sent. We provide a testing layer for sales executives to validate plays and forecast performance before going to market.
             </p>
           </div>
         
