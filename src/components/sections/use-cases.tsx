@@ -300,8 +300,8 @@ const UseCases = () => {
 <h2 className="text-base md:text-lg font-medium tracking-tight text-white mb-6 font-sans">
                     Embedded Testing Layer Before Execution
                   </h2>
-<p className="max-w-3xl mx-auto text-[21px] md:text-[23px] text-zinc-500 leading-relaxed font-sans">
-                  <span className="text-zinc-300 text-[23px] md:text-[25px]">We provide a shared testing layer</span> across the revenue organization, giving reps, leaders, and strategy teams clear insight into which plays drive engagement, pipeline, and revenue—before and after execution.
+<p className="max-w-3xl mx-auto text-[20px] md:text-[22px] text-zinc-500 leading-relaxed font-sans">
+                  <span className="text-zinc-300 text-[22px] md:text-[24px]">We provide a shared testing layer</span> across the revenue organization, giving reps, leaders, and strategy teams clear insight into which plays drive engagement, pipeline, and revenue—before and after execution.
                 </p>
           </div>
 
