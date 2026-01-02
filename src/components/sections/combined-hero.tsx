@@ -7,7 +7,7 @@ import { InteractiveSimulationGrid } from '@/components/ui/interactive-simulatio
 const heroTexts = [
   "Simulate your audience.",
   "Predict your performance.",
-  "Win all your Sales.",
+  "Win all your sales.",
 ];
 
 export default function CombinedHero() {
@@ -90,7 +90,7 @@ export default function CombinedHero() {
                 className="text-black text-center font-medium tracking-tighter"
                 style={{ 
                   fontFamily: 'var(--font-techno)',
-                  fontSize: 'clamp(56.76px, 9.425vw, 98.53px)',
+                  fontSize: 'clamp(57.90px, 9.61vw, 100.50px)',
                   lineHeight: 0.9,
                   letterSpacing: '-0.02em',
                   fontWeight: 500,
