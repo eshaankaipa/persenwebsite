@@ -46,7 +46,7 @@ const TeamInstitutions = () => {
                 key={index}
                 className="flex-shrink-0 px-8 md:px-14 py-4 flex items-center justify-center"
               >
-                <div className="relative h-[90px] md:h-[120px] w-48 md:w-[260px] grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300">
+                <div className="relative h-[99px] md:h-[132px] w-[211px] md:w-[286px] grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300">
                   <Image
                     src={company.logo}
                     alt={company.name}
