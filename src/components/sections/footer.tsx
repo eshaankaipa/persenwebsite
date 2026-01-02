@@ -143,10 +143,10 @@ const Footer = () => {
           alpha = Math.min(0.9, alpha + distFromBase * 0.02);
         }
 
-        ctx.beginPath();
-        ctx.arc(point.x, point.y, radius, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(100, 100, 100, ${alpha})`;
-        ctx.fill();
+          ctx.beginPath();
+          ctx.arc(point.x, point.y, radius, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(26, 71, 42, ${alpha})`;
+          ctx.fill();
       });
 
       rafRef.current = requestAnimationFrame(animate);

@@ -27,19 +27,29 @@ export default function Home() {
       <Header />
 
       {/* Hero Section - Hybrid of Pointer and a37 */}
-      <CombinedHero />
+      <div className="border-b border-[#1a472a]">
+        <CombinedHero />
+      </div>
 
       {/* Intelligence Visualization - a37 */}
-      <IntelligenceEngine />
+      <div className="border-b border-[#1a472a]">
+        <IntelligenceEngine />
+      </div>
 
       {/* Industry Use Cases - a37 (Dark Section) */}
-      <UseCases />
+      <div className="border-b border-[#1a472a]">
+        <UseCases />
+      </div>
 
       {/* Team & Authority - a37 */}
-      <TeamInstitutions />
+      <div className="border-b border-[#1a472a]">
+        <TeamInstitutions />
+      </div>
 
       {/* Secondary CTA - Pointer */}
-      <PreFooterSection />
+      <div className="border-b border-[#1a472a]">
+        <PreFooterSection />
+      </div>
 
       {/* Global Footer - Pointer */}
       <Footer />
