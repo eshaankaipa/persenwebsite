@@ -52,9 +52,9 @@ const PreFooterSection = () => {
             {/* FAQ Section - 2/3 */}
             <div className="lg:w-2/3 order-2 lg:order-1">
               <div className="mb-8">
-<span className="text-xs font-light uppercase tracking-[0.2em] text-zinc-500 font-mono">
-                    [FREQUENTLY ASKED QUESTIONS]
-                  </span>
+                <span className="text-[10px] uppercase tracking-wider text-zinc-500 font-medium font-sans">
+                  [Frequently Asked Questions]
+                </span>
               </div>
               
               <div className="space-y-0">
@@ -67,9 +67,9 @@ const PreFooterSection = () => {
                       onClick={() => toggleFaq(index)}
                       className="w-full py-6 flex items-center justify-between text-left group"
                     >
-<span className="text-sm md:text-base font-light text-white font-mono pr-8">
-                          {faq.question}
-                        </span>
+                      <span className="text-[18px] md:text-[20px] font-medium text-white font-sans pr-8">
+                        {faq.question}
+                      </span>
                       <span className="flex-shrink-0 w-8 h-8 flex items-center justify-center">
                         <svg 
                           className={`w-5 h-5 text-zinc-500 transition-transform duration-300 ${openIndex === index ? 'rotate-45' : ''}`}
@@ -88,9 +88,9 @@ const PreFooterSection = () => {
                         openIndex === index ? 'max-h-[300px] opacity-100 pb-6' : 'max-h-0 opacity-0'
                       }`}
                     >
-<p className="text-zinc-400 text-sm font-light leading-relaxed font-mono pr-12">
-                          {faq.answer}
-                        </p>
+                      <p className="text-zinc-400 text-[16px] leading-relaxed font-sans pr-12">
+                        {faq.answer}
+                      </p>
                     </div>
                   </div>
                 ))}
@@ -100,20 +100,20 @@ const PreFooterSection = () => {
             {/* CTA Section - 1/3 centered vertically */}
             <div className="lg:w-1/3 order-1 lg:order-2 lg:pl-12 lg:border-l lg:border-zinc-800 flex items-center">
               <div>
-<h3 className="title text-xs md:text-sm font-light leading-tight tracking-[0.2em] uppercase mb-6 text-white font-mono">
-                      READY TO WORK WITH US?
-                    </h3>
+                <h3 className="title text-[28px] md:text-[36px] font-medium leading-tight tracking-tight mb-6 text-white font-sans">
+                    Ready to work with us?
+                  </h3>
                   <div className="mb-10">
-<p className="text-zinc-400 text-sm font-light leading-relaxed font-mono">
-                        Reach out and let's explore what Persen can unlock for your team.
-                      </p>
+                    <p className="text-zinc-400 text-[16px] leading-relaxed font-sans">
+                      Reach out and let's explore what Persen can unlock for your team.
+                    </p>
                   </div>
                 
                 <div className="w-full">
                   <div className="mb-4">
-<span className="text-xs font-light uppercase tracking-[0.2em] text-zinc-500 font-mono">
-                        [SIMULATE YOUR NEXT PLAY]
-                      </span>
+                    <span className="text-[10px] uppercase tracking-wider text-zinc-500 font-medium font-sans">
+                      [Simulate your next play]
+                    </span>
                   </div>
                   
                   <div className="relative flex items-center w-full">

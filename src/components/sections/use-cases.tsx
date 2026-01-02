@@ -297,12 +297,12 @@ const UseCases = () => {
         <div className="max-w-[1400px] mx-auto px-6">
           {/* Header Text */}
           <div className="max-w-[1200px] mx-auto text-center mb-20">
-<h2 className="text-xs md:text-sm font-light tracking-[0.2em] uppercase text-white mb-6 font-mono">
-                  EMBEDDED TESTING LAYER BEFORE EXECUTION
+<h2 className="text-lg md:text-xl font-medium tracking-tight text-white mb-6 font-sans">
+                  Embedded Testing Layer Before Execution
                 </h2>
-<p className="max-w-3xl mx-auto text-base md:text-lg text-zinc-400 leading-relaxed font-mono font-light">
-                  We provide a shared testing layer across the revenue organization, giving reps, leaders, and strategy teams clear insight into which plays drive engagement, pipeline, and revenue—before and after execution.
-                </p>
+                <p className="max-w-3xl mx-auto text-[21px] md:text-[23px] text-zinc-400 leading-relaxed font-sans">
+                We provide a shared testing layer across the revenue organization, giving reps, leaders, and strategy teams clear insight into which plays drive engagement, pipeline, and revenue—before and after execution.
+              </p>
           </div>
 
         {/* 4-Column Grid - Matched syntheticsociety.ai layout */}
@@ -322,12 +322,12 @@ const UseCases = () => {
               </div>
 
               <div className="flex-1">
-<h3 className="text-sm font-light mb-2 text-white group-hover:text-blue-400 transition-colors font-mono uppercase tracking-[0.15em]">
-                      {useCase.title}
-                    </h3>
-                    <p className="text-zinc-500 text-xs leading-relaxed font-mono font-light">
-                    {useCase.description}
-                  </p>
+<h3 className="text-[18px] font-medium mb-2 text-white group-hover:text-blue-400 transition-colors font-sans">
+                    {useCase.title}
+                  </h3>
+                  <p className="text-zinc-500 text-[14px] leading-relaxed font-sans">
+                  {useCase.description}
+                </p>
               </div>
             </motion.div>
           ))}
