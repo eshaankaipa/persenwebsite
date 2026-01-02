@@ -97,13 +97,13 @@ const PreFooterSection = () => {
             <div className="lg:w-1/3 order-1 lg:order-2 lg:pl-12 lg:border-l lg:border-zinc-800 flex items-center">
               <div>
                 <h3 className="title text-[28px] md:text-[36px] font-medium leading-tight tracking-tight mb-6 text-white font-sans">
-                  Get hours back every week.
-                </h3>
-                <div className="mb-10">
-                  <p className="text-zinc-400 text-[16px] leading-relaxed font-sans">
-                    Persen simulates your audience behavior so you can focus on building relationships, not guessing metrics.
-                  </p>
-                </div>
+                    Ready to work with us?
+                  </h3>
+                  <div className="mb-10">
+                    <p className="text-zinc-400 text-[16px] leading-relaxed font-sans">
+                      Reach out and let's explore what Persen can unlock for your team.
+                    </p>
+                  </div>
                 
                 <div className="w-full">
                   <div className="mb-4">
