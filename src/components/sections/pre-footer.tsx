@@ -8,7 +8,7 @@ const faqs = [
     answer: "Persen models enterprise audiences to simulate buyer behavior, giving revenue teams a testing layer to validate outbound plays and forecast performance before and after execution."
   },
   {
-    question: "Who is Persen built for?",
+    question: "Who is it built for?",
     answer: "Persen is used by SDRs testing individual plays, sales leaders tracking long-term performance, revenue teams analyzing engagement trends, and content teams validating messaging strategy."
   },
   {
