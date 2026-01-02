@@ -71,7 +71,7 @@ const TeamInstitutions = () => {
           }
         }
         .animate-scroll-left {
-          animation: scroll-left 30s linear infinite;
+          animation: scroll-left 28.5s linear infinite;
           will-change: transform;
         }
       `}</style>
